@@ -2,19 +2,25 @@
 function generatePassword() {
 var characters = "";
 var characterLength = 0;
-var passwordLength = prompt("How many characters would you like your password to be?");
+var lowerCase = "abcdefghijklmnopqrstuvwxyz";
+var upperCase = lowerCase.toUpperCase();
+var numbers = "1234567890";
+var spChar = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+var passwordLength = prompt("How many characters 8 through 128 would you like your password to be?");
 if (passwordLength > 7 && passwordLength < 129) {
   alert("Your password will be " + [passwordLength] + " characters long.");
-  characterLength = Number(passwordLength);
+  characterLength = (passwordLength);
 }
 else {
   alert("Your password must be between 8 and 128 characters long. Please try again.");
   writePassword();
+  preventDefault();
 }
 var lowerCaseQ = confirm("Would you like lower case letters in your password?");
 if (lowerCaseQ === true) {
   alert("Your password will contain lower case letters.");
-  characters = "abcdefghijklmnopqrstuvwxyz";
+  characters = characters.concat(lowerCase);
+  passwordBlank
 }
 else {
   alert("Your password will not contain lower case letters.");
@@ -22,7 +28,7 @@ else {
 var upperCaseQ = confirm("Would you like upper case letters in your password?");
 if (upperCaseQ === true) {
   alert("Your password will contain upper case letters.");
-  characters = characters + "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  characters = characters.concat(upperCase);
 }
 else {
   alert("Your password will not contain upper case letters.");
@@ -30,7 +36,7 @@ else {
 var numbersQ = confirm("Would you like numbers in your password?");
 if (numbersQ === true) {
   alert("Your password will contain numbers.");
-  characters = characters + "1234567890";
+  characters = characters.concat(numbers);
 }
 else {
   alert("Your password will not contain numbers.");
@@ -38,23 +44,23 @@ else {
 var spCharQ = confirm("Would you like special characters in your password?");
 if (spCharQ === true) {
   alert("Your password will contain special characters.");
-  characters = characters + "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+  characters = characters.concat(spChar);
 }
 else {
   alert("Your password will not contain special characters.");
 }
 if (characters.length === 0) {
-  alert("Error! You must select at least one option. Please try again.")
+  alert("Error! You must select at least one option. Please try again.");
   writePassword();
+  preventDefault();
 }
 else {
-  var passwordRandom = '';
-  var index = 0;
-  while (index < characterLength) {
-    passwordRandom = passwordRandom + characters[Math.floor(Math.random() * characters.length)];
-    index++;
+  var passwordBlank = '';
+  
+  for (let i = 0; i < characterLength; i++) {
+    passwordBlank = passwordBlank + characters[Math.floor(Math.random() * characters.length)];
   };
-  return passwordRandom;
+  return passwordBlank;
 }
 }
 // Get references to the #generate element
