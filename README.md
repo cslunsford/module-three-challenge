@@ -14,3 +14,7 @@ The HTML and CSS starter code used in this site was provided to me from [this re
 
 ## Screenshots of Webpage
 
+[Screenshot 1](https://github.com/cslunsford/module-three-challenge/blob/main/assets/images/Screenshot%202023-06-20%20at%209.51.26%20PM.png)
+[Screenshot 2](https://github.com/cslunsford/module-three-challenge/blob/main/assets/images/Screenshot%202023-06-20%20at%209.52.03%20PM.png)
+[Screenshot 3](https://github.com/cslunsford/module-three-challenge/blob/main/assets/images/Screenshot%202023-06-20%20at%209.52.19%20PM.png)
+[Screenshot 4](https://github.com/cslunsford/module-three-challenge/blob/main/assets/images/Screenshot%202023-06-20%20at%209.52.29%20PM.png)
