@@ -10,7 +10,7 @@ The HTML and CSS starter code used in this site was provided to me from [this re
 
 ## Link to Webpage
 
-[Random Password Generator](cslunsford.github.io/module-three-challenge)
+[Random Password Generator](https://cslunsford.github.io/module-three-challenge/)
 
 ## Screenshots of Webpage
 
