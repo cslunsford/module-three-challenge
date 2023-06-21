@@ -18,36 +18,35 @@ else {
 }
 var lowerCaseQ = confirm("Would you like lower case letters in your password?");
 if (lowerCaseQ === true) {
-  alert("Your password will contain lower case letters.");
+  alert("Your password can contain lower case letters.");
   characters = characters.concat(lowerCase);
-  passwordBlank
 }
 else {
-  alert("Your password will not contain lower case letters.");
+  alert("Your password can not contain lower case letters.");
 }
 var upperCaseQ = confirm("Would you like upper case letters in your password?");
 if (upperCaseQ === true) {
-  alert("Your password will contain upper case letters.");
+  alert("Your password can contain upper case letters.");
   characters = characters.concat(upperCase);
 }
 else {
-  alert("Your password will not contain upper case letters.");
+  alert("Your password can not contain upper case letters.");
 }
 var numbersQ = confirm("Would you like numbers in your password?");
 if (numbersQ === true) {
-  alert("Your password will contain numbers.");
+  alert("Your password can contain numbers.");
   characters = characters.concat(numbers);
 }
 else {
-  alert("Your password will not contain numbers.");
+  alert("Your password can not contain numbers.");
 }
 var spCharQ = confirm("Would you like special characters in your password?");
 if (spCharQ === true) {
-  alert("Your password will contain special characters.");
+  alert("Your password can contain special characters.");
   characters = characters.concat(spChar);
 }
 else {
-  alert("Your password will not contain special characters.");
+  alert("Your password can not contain special characters.");
 }
 if (characters.length === 0) {
   alert("Error! You must select at least one option. Please try again.");
@@ -77,3 +76,4 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
